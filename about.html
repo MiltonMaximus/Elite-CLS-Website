@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Elite CLS - Contract Labour Suppliers Since 2001</title>
+  <meta name="description" content="Learn about Elite Contract Labour Suppliers Limited - providing excellent staffing services since 2001 across London, Essex and Middlesex.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0F2B5B;
+      --color-navy-light: #1A3A6E;
+      --color-blue: #1A56DB;
+      --color-blue-light: #3B82F6;
+      --color-gold: #D4A843;
+      --color-gold-light: #F5ECD7;
+      --color-dark: #111827;
+      --font-heading: "Montserrat", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="font-body text-dark bg-white">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gold rounded flex items-center justify-center">
+            <span class="font-heading font-extrabold text-navy text-lg">E</span>
+          </div>
+          <div class="hidden sm:block">
+            <span class="font-heading font-bold text-white text-lg">Elite</span>
+            <span class="font-heading text-gold text-sm block -mt-1">Contract Labour Suppliers</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Home</a>
+          <a href="about.html" class="nav-link text-white hover:text-gold transition-colors font-medium gold-underline">About Us</a>
+          <a href="team.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Our Team</a>
+          <a href="sectors.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Sectors</a>
+          <a href="contact.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-navy font-heading font-bold px-6 py-2.5 rounded transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Get a Quote
+          </a>
+          <button id="menu-btn" class="lg:hidden text-white p-2">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-50 bg-navy">
+    <div class="flex items-center justify-between p-6">
+      <span class="font-heading font-bold text-white text-xl">Elite CLS</span>
+      <button id="menu-close" class="text-white p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
+    </div>
+    <div class="flex flex-col items-center gap-6 mt-12">
+      <a href="index.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Home</a>
+      <a href="about.html" class="text-white text-xl font-heading font-semibold hover:text-gold transition-colors">About Us</a>
+      <a href="team.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Our Team</a>
+      <a href="sectors.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Sectors</a>
+      <a href="contact.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Contact</a>
+      <a href="tel:02085546655" class="mt-6 bg-gold text-navy font-heading font-bold px-8 py-3 rounded text-lg">Call 020-8554-6655</a>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="navy-gradient pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-white/50 text-sm mb-4" data-aos="fade-down">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <span class="text-gold">About Us</span>
+      </div>
+      <h1 class="font-heading font-extrabold text-white text-4xl sm:text-5xl" data-aos="fade-up">About Elite CLS</h1>
+      <p class="text-white/60 text-lg mt-4 max-w-2xl" data-aos="fade-up" data-aos-delay="100">Providing excellent service since 2001 for many of the UK's largest users of contract labourers.</p>
+    </div>
+  </section>
+
+  <!-- ===== COMPANY STORY ===== -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+          <span class="text-gold font-heading font-semibold text-sm tracking-widest uppercase">Our Story</span>
+          <h2 class="font-heading font-extrabold text-dark text-3xl sm:text-4xl mt-3 mb-6">Built on Trust Since 2001</h2>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>Elite Contract Labour Suppliers Limited was established in 2001 with a clear mission: to be the first choice for all industrial staffing solutions across London, Essex, and Middlesex.</p>
+            <p>Over more than two decades, we have built lasting partnerships with many of the UK's largest users of contract labourers, earning a reputation for responsive service and prompt placement of quality candidates.</p>
+            <p>From our beginnings, we have grown to serve hundreds of client companies, placing thousands of workers across warehousing, manufacturing, construction, logistics, and general industrial sectors.</p>
+            <p>Our success is built on a simple principle: we own our actions and deliver on our promises. Every member of our team shares this commitment to excellence.</p>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div data-aos="fade-left">
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="flag" class="w-6 h-6 text-navy"></i>
+                </div>
+                <div class="w-0.5 h-full bg-gold/20 mt-2"></div>
+              </div>
+              <div class="pb-8">
+                <span class="text-gold font-heading font-bold">2001</span>
+                <h4 class="font-heading font-bold text-dark text-lg mt-1">Company Founded</h4>
+                <p class="text-gray-500 mt-1">Elite CLS established to serve London's growing industrial staffing needs.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="trending-up" class="w-6 h-6 text-gold"></i>
+                </div>
+                <div class="w-0.5 h-full bg-gold/20 mt-2"></div>
+              </div>
+              <div class="pb-8">
+                <span class="text-gold font-heading font-bold">2005-2010</span>
+                <h4 class="font-heading font-bold text-dark text-lg mt-1">Rapid Growth</h4>
+                <p class="text-gray-500 mt-1">Expanded services across Essex and Middlesex, building a network of major industrial clients.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="building" class="w-6 h-6 text-gold"></i>
+                </div>
+                <div class="w-0.5 h-full bg-gold/20 mt-2"></div>
+              </div>
+              <div class="pb-8">
+                <span class="text-gold font-heading font-bold">2015</span>
+                <h4 class="font-heading font-bold text-dark text-lg mt-1">Multiple Branches</h4>
+                <p class="text-gray-500 mt-1">Opened our East London and Gants Hill branches to better serve local communities.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="award" class="w-6 h-6 text-navy"></i>
+                </div>
+              </div>
+              <div>
+                <span class="text-gold font-heading font-bold">Today</span>
+                <h4 class="font-heading font-bold text-dark text-lg mt-1">25+ Years of Excellence</h4>
+                <p class="text-gray-500 mt-1">Continuing to deliver exceptional staffing solutions with over 10,000 workers placed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISION & MISSION ===== -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <div class="relative">
+        <i data-lucide="quote" class="w-20 h-20 text-gold/20 mx-auto mb-6"></i>
+        <h2 class="font-heading font-extrabold text-dark text-2xl sm:text-3xl mb-8">Our Vision</h2>
+        <blockquote class="text-xl sm:text-2xl text-navy font-heading font-semibold leading-relaxed italic">
+          "We are committed to providing superior service to our clients and candidates by owning our actions and delivering on our promises"
+        </blockquote>
+      </div>
+
+      <div class="mt-16">
+        <h2 class="font-heading font-extrabold text-dark text-2xl sm:text-3xl mb-8">Our Mission</h2>
+        <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+          Elite CLS aim to be your first choice for all your Industrial staffing solutions, delivering excellent added value services and exceeding clients and colleagues expectations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALUES ===== -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-gold font-heading font-semibold text-sm tracking-widest uppercase">What Drives Us</span>
+        <h2 class="font-heading font-extrabold text-dark text-3xl sm:text-4xl mt-3">Our Core Values</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm text-center" data-aos="fade-up">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="shield" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Integrity</h3>
+          <p class="text-gray-500">We operate with honesty and transparency in everything we do, building trust with every interaction.</p>
+        </div>
+
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm text-center" data-aos="fade-up" data-aos-delay="50">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="anchor" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Reliability</h3>
+          <p class="text-gray-500">When we make a commitment, we deliver. Our clients count on us and we never let them down.</p>
+        </div>
+
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="star" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Excellence</h3>
+          <p class="text-gray-500">We strive for the highest standards in recruitment, compliance, and service delivery.</p>
+        </div>
+
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm text-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="handshake" class="w-8 h-8 text-gold"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Partnership</h3>
+          <p class="text-gray-500">We build lasting relationships with our clients, working together to achieve shared success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="gold-gradient py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <h2 class="font-heading font-extrabold text-navy text-3xl sm:text-4xl mb-4">Want to Learn More?</h2>
+      <p class="text-navy/70 text-lg mb-8 max-w-2xl mx-auto">Meet the team behind Elite CLS or get in touch to discuss your staffing needs.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="team.html" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-heading font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+          <i data-lucide="users" class="w-5 h-5"></i>
+          Meet the Team
+        </a>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-white/80 hover:bg-white text-navy font-heading font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+          <i data-lucide="send" class="w-5 h-5"></i>
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-gold rounded flex items-center justify-center">
+              <span class="font-heading font-extrabold text-navy text-lg">E</span>
+            </div>
+            <span class="font-heading font-bold text-white">Elite CLS</span>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">Providing excellent service since 2001 for many of the UK's largest users of contract labourers.</p>
+          <p class="text-white/40 text-xs mt-4">Registered No. 4061896</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors text-sm">About Us</a></li>
+            <li><a href="team.html" class="text-white/60 hover:text-gold transition-colors text-sm">Our Team</a></li>
+            <li><a href="sectors.html" class="text-white/60 hover:text-gold transition-colors text-sm">Sectors</a></li>
+            <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors text-sm">Contact</a></li>
+            <li><a href="privacy.html" class="text-white/60 hover:text-gold transition-colors text-sm">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4">Contact Us</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold mt-0.5 flex-shrink-0"></i><span class="text-white/60 text-sm">580 Cranbrook Road, Gants Hill, IG2 6RF</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="tel:02085546655" class="text-white/60 hover:text-gold transition-colors text-sm">020-8554-6655</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="mailto:info@elitecls.co.uk" class="text-white/60 hover:text-gold transition-colors text-sm">info@elitecls.co.uk</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-gold flex-shrink-0"></i><span class="text-white/60 text-sm">Mon-Fri 07:00 - 18:00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="https://twitter.com/elitecls" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 hover:bg-gold rounded flex items-center justify-center transition-colors"><i data-lucide="twitter" class="w-5 h-5 text-white"></i></a>
+            <a href="https://facebook.com/EliteClsLtd" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 hover:bg-gold rounded flex items-center justify-center transition-colors"><i data-lucide="facebook" class="w-5 h-5 text-white"></i></a>
+            <a href="https://linkedin.com/company/elite-cls" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 hover:bg-gold rounded flex items-center justify-center transition-colors"><i data-lucide="linkedin" class="w-5 h-5 text-white"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 text-center">
+        <p class="text-white/40 text-sm">&copy; 2025 Elite Contract Labour Suppliers Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

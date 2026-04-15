@@ -1,0 +1,168 @@
+/* ===== Elite CLS Custom Styles ===== */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation transition */
+.nav-scrolled {
+  background-color: #0F2B5B !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Hero parallax */
+.hero-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .hero-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Gold underline hover effect */
+.gold-underline {
+  position: relative;
+}
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #D4A843;
+  transition: width 0.3s ease;
+}
+.gold-underline:hover::after {
+  width: 100%;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Counter animation */
+.counter-value {
+  transition: all 0.3s ease;
+}
+
+/* Testimonial carousel */
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Pulsing phone icon */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.pulse-icon {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Gradient overlays for sector cards */
+.sector-card-overlay {
+  background: linear-gradient(135deg, rgba(15, 43, 91, 0.85), rgba(26, 86, 219, 0.7));
+  transition: background 0.3s ease;
+}
+.sector-card:hover .sector-card-overlay {
+  background: linear-gradient(135deg, rgba(15, 43, 91, 0.7), rgba(212, 168, 67, 0.6));
+}
+
+/* Team avatar placeholders */
+.team-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+/* Gold gradient CTA section */
+.gold-gradient {
+  background: linear-gradient(135deg, #D4A843 0%, #b8922e 50%, #D4A843 100%);
+}
+
+/* Navy gradient */
+.navy-gradient {
+  background: linear-gradient(135deg, #0F2B5B 0%, #1A3A6E 50%, #0F2B5B 100%);
+}
+
+/* Timeline connector */
+.timeline-connector {
+  position: relative;
+}
+.timeline-connector::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+  width: 2rem;
+  height: 2px;
+  background-color: #D4A843;
+}
+.timeline-connector:last-child::after {
+  display: none;
+}
+
+/* Form input focus */
+.form-input:focus {
+  outline: none;
+  border-color: #D4A843;
+  box-shadow: 0 0 0 3px rgba(212, 168, 67, 0.2);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #0F2B5B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1A3A6E;
+}
+
+/* Loading fade-in */
+body {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+body.loaded {
+  opacity: 1;
+}
+
+/* Print styles */
+@media print {
+  nav, .mobile-menu, footer { display: none; }
+  body { opacity: 1; }
+  * { color: #000 !important; background: #fff !important; }
+}

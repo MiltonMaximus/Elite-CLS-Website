@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite CLS | London's Trusted Industrial Staffing Partner</title>
+  <meta name="description" content="Elite Contract Labour Suppliers - London, Essex & Middlesex's trusted industrial staffing agency since 2001. Temporary and permanent recruitment solutions.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 Browser -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- AOS Animate on Scroll -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0F2B5B;
+      --color-navy-light: #1A3A6E;
+      --color-blue: #1A56DB;
+      --color-blue-light: #3B82F6;
+      --color-gold: #D4A843;
+      --color-gold-light: #F5ECD7;
+      --color-dark: #111827;
+      --font-heading: "Montserrat", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="font-body text-dark bg-white">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gold rounded flex items-center justify-center">
+            <span class="font-heading font-extrabold text-navy text-lg">E</span>
+          </div>
+          <div class="hidden sm:block">
+            <span class="font-heading font-bold text-white text-lg">Elite</span>
+            <span class="font-heading text-gold text-sm block -mt-1">Contract Labour Suppliers</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white hover:text-gold transition-colors font-medium gold-underline">Home</a>
+          <a href="about.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">About Us</a>
+          <a href="team.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Our Team</a>
+          <a href="sectors.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Sectors</a>
+          <a href="contact.html" class="nav-link text-white/80 hover:text-gold transition-colors font-medium gold-underline">Contact</a>
+        </div>
+
+        <!-- CTA + Hamburger -->
+        <div class="flex items-center gap-4">
+          <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-navy font-heading font-bold px-6 py-2.5 rounded transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Get a Quote
+          </a>
+          <button id="menu-btn" class="lg:hidden text-white p-2">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-50 bg-navy">
+    <div class="flex items-center justify-between p-6">
+      <span class="font-heading font-bold text-white text-xl">Elite CLS</span>
+      <button id="menu-close" class="text-white p-2">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col items-center gap-6 mt-12">
+      <a href="index.html" class="text-white text-xl font-heading font-semibold hover:text-gold transition-colors">Home</a>
+      <a href="about.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">About Us</a>
+      <a href="team.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Our Team</a>
+      <a href="sectors.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Sectors</a>
+      <a href="contact.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Contact</a>
+      <a href="tel:02085546655" class="mt-6 bg-gold text-navy font-heading font-bold px-8 py-3 rounded text-lg">
+        Call 020-8554-6655
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-bg relative min-h-screen flex items-center" style="background: linear-gradient(135deg, #0F2B5B 0%, #1A3A6E 40%, #0F2B5B 100%);">
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 left-0 w-80 h-80 bg-blue/10 rounded-full blur-3xl"></div>
+      <!-- Grid pattern overlay -->
+      <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-gold/20 text-gold px-4 py-2 rounded-full mb-6" data-aos="fade-down">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+          <span class="text-sm font-semibold">Trusted Since 2001</span>
+        </div>
+
+        <h1 class="font-heading font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6" data-aos="fade-up">
+          London's Trusted
+          <span class="text-gold block">Industrial Staffing</span>
+          Partner
+        </h1>
+
+        <p class="text-white/70 text-lg sm:text-xl max-w-2xl mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+          Providing superior service to clients and candidates across London, Essex and Middlesex. Full-time and temporary staff ready to start as soon as possible.
+        </p>
+
+        <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-navy font-heading font-bold px-8 py-4 rounded-lg text-lg transition-all hover:shadow-lg hover:shadow-gold/20">
+            <i data-lucide="users" class="w-5 h-5"></i>
+            Request Staff Now
+          </a>
+          <a href="tel:02085546655" class="inline-flex items-center gap-2 border-2 border-white/30 hover:border-white text-white font-heading font-semibold px-8 py-4 rounded-lg text-lg transition-all hover:bg-white/10">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            020-8554-6655
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <i data-lucide="chevron-down" class="w-6 h-6 text-white/50"></i>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="bg-gold-light border-b border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="flex items-center justify-center gap-3" data-aos="fade-up">
+          <i data-lucide="award" class="w-6 h-6 text-navy"></i>
+          <span class="font-heading font-semibold text-navy text-sm">25+ Years Experience</span>
+        </div>
+        <div class="flex items-center justify-center gap-3" data-aos="fade-up" data-aos-delay="50">
+          <i data-lucide="shield-check" class="w-6 h-6 text-navy"></i>
+          <span class="font-heading font-semibold text-navy text-sm">Fully Compliant</span>
+        </div>
+        <div class="flex items-center justify-center gap-3" data-aos="fade-up" data-aos-delay="100">
+          <i data-lucide="user-check" class="w-6 h-6 text-navy"></i>
+          <span class="font-heading font-semibold text-navy text-sm">DBS Checked Staff</span>
+        </div>
+        <div class="flex items-center justify-center gap-3" data-aos="fade-up" data-aos-delay="150">
+          <i data-lucide="clock" class="w-6 h-6 text-navy"></i>
+          <span class="font-heading font-semibold text-navy text-sm">Same-Day Deployment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-gold font-heading font-semibold text-sm tracking-widest uppercase">What We Do</span>
+        <h2 class="font-heading font-extrabold text-dark text-3xl sm:text-4xl mt-3">Our Staffing Solutions</h2>
+        <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Looking for full time and temporary staff to start as soon as possible. We cover a wide range of industrial sectors.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm group" data-aos="fade-up">
+          <div class="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
+            <i data-lucide="clock" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Temporary Staffing</h3>
+          <p class="text-gray-500 leading-relaxed">Flexible temporary workers available at short notice for all your operational needs.</p>
+          <a href="sectors.html" class="inline-flex items-center gap-1 text-gold font-semibold mt-4 hover:gap-2 transition-all">
+            Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm group" data-aos="fade-up" data-aos-delay="50">
+          <div class="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
+            <i data-lucide="briefcase" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Permanent Recruitment</h3>
+          <p class="text-gray-500 leading-relaxed">Find the right permanent candidates for your business with our thorough vetting process.</p>
+          <a href="sectors.html" class="inline-flex items-center gap-1 text-gold font-semibold mt-4 hover:gap-2 transition-all">
+            Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm group" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
+            <i data-lucide="forklift" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">FLT Drivers</h3>
+          <p class="text-gray-500 leading-relaxed">Experienced, licensed forklift truck drivers. Excellent rates of pay. Contact us now!</p>
+          <a href="contact.html" class="inline-flex items-center gap-1 text-gold font-semibold mt-4 hover:gap-2 transition-all">
+            Contact us <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-lift bg-white rounded-xl p-8 border border-gray-100 shadow-sm group" data-aos="fade-up" data-aos-delay="150">
+          <div class="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
+            <i data-lucide="hard-hat" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-3">Industrial Labour</h3>
+          <p class="text-gray-500 leading-relaxed">Bench hand workers, pick and pack, and general industrial operatives ready to start immediately.</p>
+          <a href="contact.html" class="inline-flex items-center gap-1 text-gold font-semibold mt-4 hover:gap-2 transition-all">
+            Contact us <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS COUNTERS ===== -->
+  <section class="navy-gradient py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div data-aos="fade-up">
+          <div class="text-gold font-heading font-extrabold text-5xl sm:text-6xl" data-counter="25" data-suffix="+">0</div>
+          <div class="text-white/70 font-medium mt-2">Years in Business</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="text-gold font-heading font-extrabold text-5xl sm:text-6xl" data-counter="10000" data-suffix="+">0</div>
+          <div class="text-white/70 font-medium mt-2">Workers Placed</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div class="text-gold font-heading font-extrabold text-5xl sm:text-6xl" data-counter="500" data-suffix="+">0</div>
+          <div class="text-white/70 font-medium mt-2">Client Companies</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <div class="text-gold font-heading font-extrabold text-5xl sm:text-6xl" data-counter="3">0</div>
+          <div class="text-white/70 font-medium mt-2">Coverage Areas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE ELITE ===== -->
+  <section class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left: Visual -->
+        <div class="relative" data-aos="fade-right">
+          <div class="bg-navy rounded-2xl p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-gold/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 bg-blue/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+            <div class="relative text-center">
+              <i data-lucide="quote" class="w-16 h-16 text-gold/30 mx-auto mb-6"></i>
+              <blockquote class="text-white text-xl font-heading font-semibold leading-relaxed italic">
+                "We are committed to providing superior service to our clients and candidates by owning our actions and delivering on our promises"
+              </blockquote>
+              <p class="text-gold mt-6 font-heading font-semibold">Our Vision</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div data-aos="fade-left">
+          <span class="text-gold font-heading font-semibold text-sm tracking-widest uppercase">Why Choose Us</span>
+          <h2 class="font-heading font-extrabold text-dark text-3xl sm:text-4xl mt-3 mb-8">The Elite Difference</h2>
+
+          <div class="space-y-5">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-dark">Rigorous Vetting Process</h4>
+                <p class="text-gray-500 mt-1">Every candidate is thoroughly screened, DBS checked, and skills-verified before placement.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-dark">24-Hour Emergency Cover</h4>
+                <p class="text-gray-500 mt-1">Unexpected absences? We provide rapid replacement staff to keep your operations running.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-dark">Dedicated Account Manager</h4>
+                <p class="text-gray-500 mt-1">A single point of contact who understands your business and staffing requirements.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-dark">Full Compliance Guaranteed</h4>
+                <p class="text-gray-500 mt-1">Fully compliant with all employment legislation, health & safety, and right-to-work requirements.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center mt-0.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-dark">Same-Day Deployment</h4>
+                <p class="text-gray-500 mt-1">Need workers today? We can deploy vetted staff to your site within hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="navy-gradient py-20 lg:py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-gold font-heading font-semibold text-sm tracking-widest uppercase">Testimonials</span>
+        <h2 class="font-heading font-extrabold text-white text-3xl sm:text-4xl mt-3">What Our Clients Say</h2>
+      </div>
+
+      <div class="relative max-w-3xl mx-auto">
+        <div class="overflow-hidden rounded-2xl">
+          <div id="testimonial-track" class="testimonial-track">
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0 px-4">
+              <div class="bg-white/10 backdrop-blur rounded-2xl p-8 sm:p-12 text-center">
+                <div class="flex justify-center gap-1 mb-6">
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                </div>
+                <p class="text-white text-lg leading-relaxed italic mb-8">"Elite CLS have been our go-to staffing partner for over 5 years. Their response time is incredible and the quality of workers they provide is consistently excellent."</p>
+                <p class="font-heading font-bold text-white">James Thompson</p>
+                <p class="text-gold text-sm">Operations Manager, London Distribution Ltd</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 px-4">
+              <div class="bg-white/10 backdrop-blur rounded-2xl p-8 sm:p-12 text-center">
+                <div class="flex justify-center gap-1 mb-6">
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                </div>
+                <p class="text-white text-lg leading-relaxed italic mb-8">"When we needed 20 warehouse operatives at short notice, Elite CLS delivered within 24 hours. Professional, reliable, and always available when we need them."</p>
+                <p class="font-heading font-bold text-white">Sarah Mitchell</p>
+                <p class="text-gold text-sm">HR Director, Essex Manufacturing Group</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 px-4">
+              <div class="bg-white/10 backdrop-blur rounded-2xl p-8 sm:p-12 text-center">
+                <div class="flex justify-center gap-1 mb-6">
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
+                </div>
+                <p class="text-white text-lg leading-relaxed italic mb-8">"The team at Elite CLS truly understand our business. Their FLT drivers are well-trained and their compliance documentation is always impeccable."</p>
+                <p class="font-heading font-bold text-white">David Patel</p>
+                <p class="text-gold text-sm">Warehouse Manager, Middlesex Logistics PLC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel dots -->
+        <div class="flex justify-center gap-3 mt-8">
+          <button data-slide="0" class="w-3 h-3 rounded-full bg-gold transition-colors"></button>
+          <button data-slide="1" class="w-3 h-3 rounded-full bg-white/40 transition-colors"></button>
+          <button data-slide="2" class="w-3 h-3 rounded-full bg-white/40 transition-colors"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LATEST JOBS ===== -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="text-gold font-heading font-semibold text-sm tracking-widest uppercase">Opportunities</span>
+        <h2 class="font-heading font-extrabold text-dark text-3xl sm:text-4xl mt-3">Latest Jobs</h2>
+        <p class="text-gray-500 mt-4 max-w-2xl mx-auto">You will need an appointment to register. Call us on 020-8554-6655.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-lift border border-gray-100 rounded-xl p-8 shadow-sm" data-aos="fade-up">
+          <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span> Hiring Now
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-2">FLT Driver</h3>
+          <p class="text-gray-500 mb-4">Excellent rates of pay. Experienced forklift truck drivers needed for multiple locations.</p>
+          <div class="flex items-center gap-4 text-sm text-gray-400">
+            <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> London & Essex</span>
+            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> Full-time / Temp</span>
+          </div>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-6 py-2.5 rounded mt-6 transition-colors">
+            Apply Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="card-lift border border-gray-100 rounded-xl p-8 shadow-sm" data-aos="fade-up" data-aos-delay="50">
+          <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span> Hiring Now
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-2">Bench Hand Worker</h3>
+          <p class="text-gray-500 mb-4">Start as soon as possible. Please call or email today for immediate consideration.</p>
+          <div class="flex items-center gap-4 text-sm text-gray-400">
+            <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> London</span>
+            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> Full-time / Temp</span>
+          </div>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-6 py-2.5 rounded mt-6 transition-colors">
+            Apply Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="card-lift border border-gray-100 rounded-xl p-8 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+            <span class="w-2 h-2 bg-blue-500 rounded-full"></span> Multiple Roles
+          </div>
+          <h3 class="font-heading font-bold text-dark text-xl mb-2">Warehouse Operatives</h3>
+          <p class="text-gray-500 mb-4">Various warehouse roles available across London, Essex, and Middlesex. Competitive pay rates.</p>
+          <div class="flex items-center gap-4 text-sm text-gray-400">
+            <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> Multiple Locations</span>
+            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> Full-time / Temp</span>
+          </div>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-6 py-2.5 rounded mt-6 transition-colors">
+            Apply Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="gold-gradient py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <h2 class="font-heading font-extrabold text-navy text-3xl sm:text-4xl mb-4">Ready to Solve Your Staffing Challenges?</h2>
+      <p class="text-navy/70 text-lg mb-8 max-w-2xl mx-auto">Whether you need one operative or an entire workforce, Elite CLS has you covered. Call today to be part of our agency.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-heading font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+          <i data-lucide="send" class="w-5 h-5"></i>
+          Get In Touch
+        </a>
+        <a href="tel:02085546655" class="inline-flex items-center gap-2 bg-white/80 hover:bg-white text-navy font-heading font-bold px-8 py-4 rounded-lg text-lg transition-colors">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          020-8554-6655
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <!-- Company Info -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-gold rounded flex items-center justify-center">
+              <span class="font-heading font-extrabold text-navy text-lg">E</span>
+            </div>
+            <div>
+              <span class="font-heading font-bold text-white">Elite CLS</span>
+            </div>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">Providing excellent service since 2001 for many of the UK's largest users of contract labourers.</p>
+          <p class="text-white/40 text-xs mt-4">Registered No. 4061896</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors text-sm">About Us</a></li>
+            <li><a href="team.html" class="text-white/60 hover:text-gold transition-colors text-sm">Our Team</a></li>
+            <li><a href="sectors.html" class="text-white/60 hover:text-gold transition-colors text-sm">Sectors</a></li>
+            <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors text-sm">Contact</a></li>
+            <li><a href="privacy.html" class="text-white/60 hover:text-gold transition-colors text-sm">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4">Contact Us</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold mt-0.5 flex-shrink-0"></i>
+              <span class="text-white/60 text-sm">580 Cranbrook Road, Gants Hill, IG2 6RF</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0"></i>
+              <a href="tel:02085546655" class="text-white/60 hover:text-gold transition-colors text-sm">020-8554-6655</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0"></i>
+              <a href="mailto:info@elitecls.co.uk" class="text-white/60 hover:text-gold transition-colors text-sm">info@elitecls.co.uk</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-gold flex-shrink-0"></i>
+              <span class="text-white/60 text-sm">Mon-Fri 07:00 - 18:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h4 class="font-heading font-bold text-white mb-4">Follow Us</h4>
+          <div class="flex gap-3">
+            <a href="https://twitter.com/elitecls" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 hover:bg-gold rounded flex items-center justify-center transition-colors">
+              <i data-lucide="twitter" class="w-5 h-5 text-white"></i>
+            </a>
+            <a href="https://facebook.com/EliteClsLtd" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 hover:bg-gold rounded flex items-center justify-center transition-colors">
+              <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+            </a>
+            <a href="https://linkedin.com/company/elite-cls" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 hover:bg-gold rounded flex items-center justify-center transition-colors">
+              <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+            </a>
+          </div>
+          <div class="mt-6">
+            <a href="tel:02085546655" class="inline-flex items-center gap-2 text-gold font-heading font-semibold text-sm">
+              <i data-lucide="phone" class="w-4 h-4 pulse-icon"></i>
+              Register for Jobs Today
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 text-center">
+        <p class="text-white/40 text-sm">
+          &copy; 2025 Elite Contract Labour Suppliers Limited. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
