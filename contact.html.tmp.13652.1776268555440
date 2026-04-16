@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Elite CLS - Get In Touch</title>
-  <meta name="description" content="Contact Elite Contract Labour Suppliers. Call 0208 554 6655 or visit us at our offices. Mon-Fri 07:00-18:00.">
+  <meta name="description" content="Contact Elite Contract Labour Suppliers. Call 020-8554-6655 or visit us at our offices. Mon-Fri 07:00-18:00.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -69,7 +69,7 @@
       <a href="team.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Our Team</a>
       <a href="sectors.html" class="text-white/80 text-xl font-heading font-semibold hover:text-gold transition-colors">Sectors</a>
       <a href="contact.html" class="text-white text-xl font-heading font-semibold hover:text-gold transition-colors">Contact</a>
-      <a href="tel:02085546655" class="mt-6 bg-gold text-navy font-heading font-bold px-8 py-3 rounded text-lg">Call 0208 554 6655</a>
+      <a href="tel:02085546655" class="mt-6 bg-gold text-navy font-heading font-bold px-8 py-3 rounded text-lg">Call 020-8554-6655</a>
     </div>
   </div>
 
@@ -92,7 +92,7 @@
       <div class="flex items-center justify-center gap-3 flex-wrap">
         <i data-lucide="phone" class="w-5 h-5 text-navy pulse-icon"></i>
         <span class="font-heading font-bold text-navy">Need staff urgently?</span>
-        <a href="tel:02085546655" class="font-heading font-extrabold text-navy text-xl hover:text-navy-light transition-colors">Call 0208 554 6655</a>
+        <a href="tel:02085546655" class="font-heading font-extrabold text-navy text-xl hover:text-navy-light transition-colors">Call 020-8554-6655</a>
         <span class="text-navy/60 text-sm">Mon-Fri 07:00 - 18:00</span>
       </div>
     </div>
@@ -164,7 +164,7 @@
               <i data-lucide="check-circle" class="w-10 h-10 text-green-600"></i>
             </div>
             <h3 class="font-heading font-bold text-dark text-2xl mb-2">Your details were sent successfully!</h3>
-            <p class="text-gray-500">We'll be in touch shortly. For urgent enquiries, call 0208 554 6655.</p>
+            <p class="text-gray-500">We'll be in touch shortly. For urgent enquiries, call 020-8554-6655.</p>
           </div>
         </div>
 
@@ -179,7 +179,7 @@
                 </div>
                 <div>
                   <h3 class="font-heading font-bold text-dark text-lg">Call Us</h3>
-                  <a href="tel:02085546655" class="text-navy text-xl font-heading font-bold hover:text-gold transition-colors">0208 554 6655</a>
+                  <a href="tel:02085546655" class="text-navy text-xl font-heading font-bold hover:text-gold transition-colors">020-8554-6655</a>
                   <p class="text-gray-500 text-sm mt-1">Mon-Fri 07:00 - 18:00</p>
                 </div>
               </div>
@@ -264,7 +264,7 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="Elite CLS Location - Camberley, Surrey">
+          title="Elite CLS Location - Gants Hill">
         </iframe>
       </div>
     </div>
@@ -296,7 +296,7 @@
           <h4 class="font-heading font-bold text-white mb-4">Contact Us</h4>
           <ul class="space-y-3">
             <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold mt-0.5 flex-shrink-0"></i><span class="text-white/60 text-sm">580 Cranbrook Road, Gants Hill, IG2 6RF</span></li>
-            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="tel:02085546655" class="text-white/60 hover:text-gold transition-colors text-sm">0208 554 6655</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="tel:02085546655" class="text-white/60 hover:text-gold transition-colors text-sm">020-8554-6655</a></li>
             <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="mailto:info@elitecls.co.uk" class="text-white/60 hover:text-gold transition-colors text-sm">info@elitecls.co.uk</a></li>
             <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-gold flex-shrink-0"></i><span class="text-white/60 text-sm">Mon-Fri 07:00 - 18:00</span></li>
           </ul>
