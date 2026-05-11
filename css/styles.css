@@ -64,12 +64,6 @@ html {
   transition: all 0.3s ease;
 }
 
-/* Testimonial carousel */
-.testimonial-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
 /* Pulsing phone icon */
 @keyframes pulse {
   0%, 100% { transform: scale(1); }

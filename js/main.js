@@ -106,44 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== Testimonial Carousel =====
-  const track = document.getElementById('testimonial-track');
-  const dots = document.querySelectorAll('[data-slide]');
-  let currentSlide = 0;
-  let slideInterval;
-
-  function goToSlide(index) {
-    if (!track) return;
-    const slides = track.children;
-    if (index >= slides.length) index = 0;
-    if (index < 0) index = slides.length - 1;
-    currentSlide = index;
-    track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
-
-    dots.forEach(function (dot, i) {
-      dot.classList.toggle('bg-gold', i === currentSlide);
-      dot.classList.toggle('bg-white/40', i !== currentSlide);
-    });
-  }
-
-  dots.forEach(function (dot) {
-    dot.addEventListener('click', function () {
-      goToSlide(parseInt(dot.getAttribute('data-slide'), 10));
-      resetAutoSlide();
-    });
-  });
-
-  function resetAutoSlide() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(function () {
-      goToSlide(currentSlide + 1);
-    }, 5000);
-  }
-
-  if (track && track.children.length > 0) {
-    resetAutoSlide();
-  }
-
   // ===== Contact Form Validation =====
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
