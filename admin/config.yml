@@ -2,7 +2,7 @@ backend:
   name: github
   repo: MiltonMaximus/Elite-CLS-Website
   branch: main
-  base_url: https://auth.sveltia.app
+  base_url: https://sveltia-cms-auth.tarekmaximus1.workers.dev
 
 # Where the live site lives. Used by the "View live" button in the CMS.
 site_url: https://elite-cls.netlify.app
