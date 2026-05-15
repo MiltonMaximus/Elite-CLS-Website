@@ -1,0 +1,56 @@
+media:
+  - name: media
+    label: Media
+    input: images
+    output: /images
+    extensions: [jpg, jpeg, png, webp, avif, svg]
+
+content:
+  - name: jobs
+    label: Vacancies
+    type: file
+    path: data/jobs.json
+    format: json
+    fields:
+      - name: jobs
+        label: All Vacancies
+        type: object
+        list:
+          collapsible:
+            summary: "{fields.title} - {fields.location}"
+        fields:
+          - name: title
+            label: Job title
+            type: string
+            required: true
+            description: "Example: FLT Driver, Warehouse Operative, Bench Hand Worker."
+          - name: location
+            label: Location
+            type: string
+            required: true
+            description: "Example: London, Essex, Multiple Locations."
+          - name: type
+            label: Job type
+            type: string
+            default: "Full-time / Temp"
+            description: "Example: Full-time / Temp, Part-time, Temporary, Contract."
+          - name: status
+            label: Status badge
+            type: select
+            options:
+              - Hiring Now
+              - Multiple Roles
+              - Urgent
+              - Closed
+            default: Hiring Now
+            description: "Pick the coloured badge shown on the card."
+          - name: description
+            label: Description
+            type: text
+            required: true
+            description: "Short summary, 1 or 2 sentences. Shown on the card."
+          - name: date_posted
+            label: Date posted
+            type: date
+            required: true
+            description: "Used to sort jobs. The 3 newest appear on the homepage."
