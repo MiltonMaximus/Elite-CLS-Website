@@ -12,6 +12,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <style type="text/tailwindcss">
     @theme {
@@ -197,7 +198,7 @@
             <span class="w-2 h-2 ${style.dot} rounded-full"></span> ${escapeHTML(job.status)}
           </div>
           <h3 class="font-heading font-bold text-dark text-xl mb-2">${escapeHTML(job.title)}</h3>
-          <p class="text-gray-500 mb-4">${escapeHTML(job.description)}</p>
+          <div class="job-description text-gray-600 mb-4 text-sm leading-relaxed">${window.marked ? marked.parse(job.description || '') : escapeHTML(job.description || '')}</div>
           <div class="flex items-center gap-4 text-sm text-gray-400 flex-wrap">
             <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> ${escapeHTML(job.location)}</span>
             <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> ${escapeHTML(job.type)}</span>

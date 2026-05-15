@@ -20,6 +20,7 @@
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -373,7 +374,7 @@
             <span class="w-2 h-2 ${style.dot} rounded-full"></span> ${homeEscapeHTML(job.status)}
           </div>
           <h3 class="font-heading font-bold text-dark text-xl mb-2">${homeEscapeHTML(job.title)}</h3>
-          <p class="text-gray-500 mb-4">${homeEscapeHTML(job.description)}</p>
+          <div class="job-description text-gray-600 mb-4 text-sm leading-relaxed">${window.marked ? marked.parse(job.description || '') : homeEscapeHTML(job.description || '')}</div>
           <div class="flex items-center gap-4 text-sm text-gray-400 flex-wrap">
             <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> ${homeEscapeHTML(job.location)}</span>
             <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> ${homeEscapeHTML(job.type)}</span>

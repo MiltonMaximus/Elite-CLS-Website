@@ -56,9 +56,9 @@ content:
             description: "Pick the coloured badge shown on the card."
           - name: description
             label: Description
-            type: text
+            type: rich-text
             required: true
-            description: "Short summary, 1 or 2 sentences. Shown on the card."
+            description: "Full job description. Use the toolbar to add headings, bold text, and bullet lists. Example: a short intro paragraph, then **Main Duties** heading with a bullet list, then **Job Details** with another bullet list."
           - name: date_posted
             label: Date posted
             type: date
