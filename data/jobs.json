@@ -1,3 +1,12 @@
 {
-  "jobs": []
+  "jobs": [
+    {
+      "title": "Test FLT Driver",
+      "location": "London",
+      "type": "Full-time / Temp",
+      "status": "Hiring Now",
+      "description": "Test vacancy to verify the CMS pipeline",
+      "date_posted": "2026-05-15"
+    }
+  ]
 }
