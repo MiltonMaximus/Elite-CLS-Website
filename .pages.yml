@@ -38,10 +38,11 @@ content:
             label: Status badge
             type: select
             options:
-              - Hiring Now
-              - Multiple Roles
-              - Urgent
-              - Closed
+              values:
+                - Hiring Now
+                - Multiple Roles
+                - Urgent
+                - Closed
             default: Hiring Now
             description: "Pick the coloured badge shown on the card."
           - name: description
