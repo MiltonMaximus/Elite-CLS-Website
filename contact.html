@@ -106,35 +106,38 @@
           <h2 class="font-heading font-extrabold text-dark text-3xl mb-2">Send Us a Message</h2>
           <p class="text-gray-500 mb-8">Fill in the form below and we'll get back to you as soon as possible.</p>
 
-          <form id="contact-form" class="space-y-6">
+          <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+
             <div class="grid sm:grid-cols-2 gap-6">
               <div>
                 <label class="block text-sm font-semibold text-dark mb-2">Your Name *</label>
-                <input type="text" required class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="John Smith">
+                <input type="text" name="name" required class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="John Smith">
                 <p class="field-error hidden text-red-500 text-sm mt-1">This field is required</p>
               </div>
               <div>
                 <label class="block text-sm font-semibold text-dark mb-2">Company Name</label>
-                <input type="text" class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="Your Company Ltd">
+                <input type="text" name="company" class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="Your Company Ltd">
               </div>
             </div>
 
             <div class="grid sm:grid-cols-2 gap-6">
               <div>
                 <label class="block text-sm font-semibold text-dark mb-2">Email Address *</label>
-                <input type="email" required class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="john@company.com">
+                <input type="email" name="email" required class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="john@company.com">
                 <p class="field-error hidden text-red-500 text-sm mt-1">This field is required</p>
               </div>
               <div>
                 <label class="block text-sm font-semibold text-dark mb-2">Phone Number *</label>
-                <input type="tel" required class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="020 1234 5678">
+                <input type="tel" name="phone" required class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all" placeholder="020 1234 5678">
                 <p class="field-error hidden text-red-500 text-sm mt-1">This field is required</p>
               </div>
             </div>
 
             <div>
               <label class="block text-sm font-semibold text-dark mb-2">Staffing Need</label>
-              <select class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark transition-all">
+              <select name="staffing-need" class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark transition-all">
                 <option value="">Select your requirement...</option>
                 <option value="temporary">Temporary Staffing</option>
                 <option value="permanent">Permanent Recruitment</option>
@@ -146,7 +149,7 @@
 
             <div>
               <label class="block text-sm font-semibold text-dark mb-2">Message *</label>
-              <textarea required rows="5" class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all resize-none" placeholder="Tell us about your staffing requirements..."></textarea>
+              <textarea name="message" required rows="5" class="form-input w-full border border-gray-200 rounded-lg px-4 py-3 text-dark placeholder-gray-400 transition-all resize-none" placeholder="Tell us about your staffing requirements..."></textarea>
               <p class="field-error hidden text-red-500 text-sm mt-1">This field is required</p>
             </div>
 

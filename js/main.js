@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== Contact Form Validation =====
+  // ===== Contact Form Validation + Netlify Forms submit =====
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
@@ -133,13 +133,35 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      if (valid) {
-        const successMsg = document.getElementById('form-success');
-        if (successMsg) {
-          contactForm.style.display = 'none';
-          successMsg.classList.remove('hidden');
-        }
-      }
+      if (!valid) return;
+
+      // Submit to Netlify Forms (URL-encoded POST to the page itself).
+      // Netlify intercepts requests whose form-name matches a form declared
+      // in the deployed HTML and stores the submission in the dashboard.
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      const formData = new FormData(contactForm);
+      const params = new URLSearchParams();
+      formData.forEach(function (value, key) { params.append(key, value); });
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString()
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Submission failed: ' + response.status);
+          const successMsg = document.getElementById('form-success');
+          if (successMsg) {
+            contactForm.style.display = 'none';
+            successMsg.classList.remove('hidden');
+          }
+        })
+        .catch(function () {
+          alert('Sorry, your message could not be sent. Please call 0208 554 6655 or email info@elitecls.co.uk.');
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
 
     // Clear errors on input
