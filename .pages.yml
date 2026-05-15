@@ -34,6 +34,15 @@ content:
             type: string
             default: "Full-time / Temp"
             description: "Example: Full-time / Temp, Part-time, Temporary, Contract."
+          - name: salary
+            label: Salary
+            type: string
+            description: "Example: £12.50/hr, £25-30k, Competitive, DOE."
+          - name: start_date
+            label: Start date / availability
+            type: string
+            default: Immediate
+            description: "Example: Immediate, ASAP, 1 June 2026, Within 1 week, Flexible."
           - name: status
             label: Status badge
             type: select

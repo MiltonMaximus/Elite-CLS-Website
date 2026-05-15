@@ -202,6 +202,10 @@
             <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> ${escapeHTML(job.location)}</span>
             <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> ${escapeHTML(job.type)}</span>
           </div>
+          <div class="flex items-center gap-4 text-sm text-gray-500 flex-wrap mt-2">
+            <span class="flex items-center gap-1"><i data-lucide="wallet" class="w-4 h-4"></i> ${escapeHTML(job.salary || '')}</span>
+            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> ${escapeHTML(job.start_date || '')}</span>
+          </div>
           <a href="contact.html" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-6 py-2.5 rounded mt-6 transition-colors">
             Apply Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
